@@ -1,10 +1,8 @@
 // change your ssid and password accordingly
 
-
 #include <ESP8266WiFi.h>
-#include <ESP8266HTTPClient.h>
 
-//Declaring all the constants
+#include <ESP8266HTTPClient.h>
 const int analog_ip = A0;
 int inputVal  = 0;
 int analog1=5;
@@ -30,7 +28,6 @@ http.end();
 return TheHiddenAnswerOfClient;
 }
 
-
 void setup()
 {
   pinMode(analog1,OUTPUT);
@@ -44,7 +41,7 @@ void setup()
   WiFi.disconnect();
   delay(3000);
   Serial.println("START");
-   WiFi.begin("Hotspot name","password");
+   WiFi.begin("Hotspot Name","password");
   while ((!(WiFi.status() == WL_CONNECTED))){
     delay(300);
     Serial.print("..");
@@ -61,7 +58,7 @@ void setup()
 
 void loop()
 {
- me=gettheAnswer("Server IP: Port","Cache");
+ me=gettheAnswer("ServerIP:Port","Cache");
  inputVal = analogRead(analog_ip);
  if(me[0]=='0')
  {
