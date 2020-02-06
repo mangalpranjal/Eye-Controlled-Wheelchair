@@ -1,0 +1,2 @@
+# Eye-Controlled-Wheelchair
+As the name suggests, this is a wheelchair that can be controlled by the motion of eyes. Being specific though, we built a prototype, which can be easily implemented on an actual wheelchair. We started off with this super-cool project in November’19. The idea sparked as an initiative for a social cause. We were also lucky enough to present our project in the Inter-I.I.T. Tech Meet 8.0 held at IIT Roorkee. 
