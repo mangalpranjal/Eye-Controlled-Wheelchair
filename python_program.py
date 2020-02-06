@@ -12,7 +12,6 @@ capture=None
 font = cv2.FONT_HERSHEY_PLAIN
 count=0
 key=0
-
 def midpoint(p1 ,p2):
     return int((p1.x + p2.x)/2), int((p1.y + p2.y)/2)
 
@@ -115,7 +114,7 @@ def main():
     #capture.set(cv2.CAP_PROP_FRAME_WIDTH, 320); 
     #capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 240);
     k=cv2.waitKey(1)
-    server = HTTPServer(('Server IP', Port),CamHandler)
+    server = HTTPServer(('Server IP',port),CamHandler)
     print ("server started")
     server.serve_forever()
     if k==27:
